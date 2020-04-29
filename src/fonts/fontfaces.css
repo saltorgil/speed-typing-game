@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'astron_boy';
+    src: url('astron_boy.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'astron_boy';
+    src: url('astron_boy-italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'astron_boy_video';
+    src: url('astron_boy_video.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'astron_boy_wonder';
+    src: url('astron_boy_wonder.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
