@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/speed-typing-game/static/css/main.194fc59a.chunk.css",
+    "main.js": "/speed-typing-game/static/js/main.9464f96c.chunk.js",
+    "main.js.map": "/speed-typing-game/static/js/main.9464f96c.chunk.js.map",
+    "runtime-main.js": "/speed-typing-game/static/js/runtime-main.92673d00.js",
+    "runtime-main.js.map": "/speed-typing-game/static/js/runtime-main.92673d00.js.map",
+    "static/js/2.fe0e4576.chunk.js": "/speed-typing-game/static/js/2.fe0e4576.chunk.js",
+    "static/js/2.fe0e4576.chunk.js.map": "/speed-typing-game/static/js/2.fe0e4576.chunk.js.map",
+    "index.html": "/speed-typing-game/index.html",
+    "precache-manifest.ca3e4683bd4e100ad212d98686657801.js": "/speed-typing-game/precache-manifest.ca3e4683bd4e100ad212d98686657801.js",
+    "service-worker.js": "/speed-typing-game/service-worker.js",
+    "static/css/main.194fc59a.chunk.css.map": "/speed-typing-game/static/css/main.194fc59a.chunk.css.map",
+    "static/js/2.fe0e4576.chunk.js.LICENSE.txt": "/speed-typing-game/static/js/2.fe0e4576.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/speed-typing-game/static/media/astron_boy_wonder.ae564d58.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92673d00.js",
+    "static/js/2.fe0e4576.chunk.js",
+    "static/css/main.194fc59a.chunk.css",
+    "static/js/main.9464f96c.chunk.js"
+  ]
+}
