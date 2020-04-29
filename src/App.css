@@ -1,15 +1,41 @@
 @import url(./fonts/fontfaces.css);
 
+:root {
+    --green_game: #00b800;
+  }
+
+*{
+    box-sizing: border-box;
+    font-family: 'invasion';
+}
+
 html, body{
     margin : 0;
     padding : 0;
     text-align: center;
     background: black;
-    color: #00b800;
-    font-family: 'astron_boy';
-    font-size: 100%
+    color: var(--green_game);
+    font-size: 100%;
 }
 
 .main-container{
-    font-size: 2rem;
+    font-size: 1.25rem;
+}
+
+textarea{
+    width: 95%;
+    height: 250px;
+    background-color: var(--green_game);
+    outline: none;
+    font-size: 1.25rem;
+    padding: 10px;
+    border: 1px solid black
+}
+
+button{
+    padding: 12px;
+    font-size: 1.5rem;
+    background-color: var(--green_game);
+    border: 1px solid black;
+    text-transform: uppercase;
 }
