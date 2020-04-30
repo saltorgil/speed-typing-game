@@ -23,6 +23,7 @@ html, body{
 
 body > #root > div {
     height: 100vh;
+    width: 100%;
 }
 
 .main{
@@ -45,9 +46,10 @@ body > #root > div {
 }
 
 .main-container-title{
-    margin-top: -40px;
+    margin-top: -3rem;
     background: black;
-    width: 40rem;
+    width: 82%;
+    font-size: 3rem;
 }
 
 h1{
@@ -77,6 +79,14 @@ button{
     cursor: pointer;
 }
 
-button:disabled{
+button:disabled:after{
     cursor: not-allowed;
+    animation-play-state: paused;
+}
+
+@media (max-width: 600px)
+{
+    html, body{
+        font-size: 70%;
+    }
 }
