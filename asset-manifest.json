@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/speed-typing-game/static/css/main.ca063582.chunk.css",
-    "main.js": "/speed-typing-game/static/js/main.12edea2e.chunk.js",
-    "main.js.map": "/speed-typing-game/static/js/main.12edea2e.chunk.js.map",
+    "main.css": "/speed-typing-game/static/css/main.d2411970.chunk.css",
+    "main.js": "/speed-typing-game/static/js/main.e488718f.chunk.js",
+    "main.js.map": "/speed-typing-game/static/js/main.e488718f.chunk.js.map",
     "runtime-main.js": "/speed-typing-game/static/js/runtime-main.92673d00.js",
     "runtime-main.js.map": "/speed-typing-game/static/js/runtime-main.92673d00.js.map",
-    "static/js/2.51cfeed7.chunk.js": "/speed-typing-game/static/js/2.51cfeed7.chunk.js",
-    "static/js/2.51cfeed7.chunk.js.map": "/speed-typing-game/static/js/2.51cfeed7.chunk.js.map",
+    "static/js/2.9e571629.chunk.js": "/speed-typing-game/static/js/2.9e571629.chunk.js",
+    "static/js/2.9e571629.chunk.js.map": "/speed-typing-game/static/js/2.9e571629.chunk.js.map",
     "index.html": "/speed-typing-game/index.html",
-    "precache-manifest.9ee369aed5e68ffe8cef737eba761aad.js": "/speed-typing-game/precache-manifest.9ee369aed5e68ffe8cef737eba761aad.js",
+    "precache-manifest.19b8c1c388ae10cc98a2ea836425e6db.js": "/speed-typing-game/precache-manifest.19b8c1c388ae10cc98a2ea836425e6db.js",
     "service-worker.js": "/speed-typing-game/service-worker.js",
-    "static/css/main.ca063582.chunk.css.map": "/speed-typing-game/static/css/main.ca063582.chunk.css.map",
-    "static/js/2.51cfeed7.chunk.js.LICENSE.txt": "/speed-typing-game/static/js/2.51cfeed7.chunk.js.LICENSE.txt",
+    "static/css/main.d2411970.chunk.css.map": "/speed-typing-game/static/css/main.d2411970.chunk.css.map",
+    "static/js/2.9e571629.chunk.js.LICENSE.txt": "/speed-typing-game/static/js/2.9e571629.chunk.js.LICENSE.txt",
     "static/media/app.css": "/speed-typing-game/static/media/INVASION2000.4bf9d9b6.TTF"
   },
   "entrypoints": [
     "static/js/runtime-main.92673d00.js",
-    "static/js/2.51cfeed7.chunk.js",
-    "static/css/main.ca063582.chunk.css",
-    "static/js/main.12edea2e.chunk.js"
+    "static/js/2.9e571629.chunk.js",
+    "static/css/main.d2411970.chunk.css",
+    "static/js/main.e488718f.chunk.js"
   ]
 }
