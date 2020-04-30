@@ -1,8 +1,10 @@
 @import url(./fonts/fontfaces.css);
+@import url(./effects.css);
 
 :root {
     --green_game: #00b800;
   }
+
 
 *{
     box-sizing: border-box;
@@ -16,10 +18,30 @@ html, body{
     background: black;
     color: var(--green_game);
     font-size: 100%;
+
+}
+
+body > #root > div {
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100%;
 }
 
 .main-container{
     font-size: 1.25rem;
+    border: 1px solid var(--green_game);
+    border-width: 4px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -28,7 +50,7 @@ h1{
 
 textarea{
     width: 95%;
-    height: 250px;
+    height: 200px;
     background-color: var(--green_game);
     outline: none;
     font-size: 1.25rem;
@@ -41,11 +63,12 @@ textarea:disabled{
 }
 
 button{
-    padding: 12px;
-    font-size: 1.5rem;
+    padding: 15px;
+    font-size: 1.8rem;
     background-color: var(--green_game);
     border: 1px solid black;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 button:disabled{

@@ -51,9 +51,10 @@ function App() {
 
 
   return(
-    <>
+    <div className="main">
       <div className='main-container'>
-        <h1>How fast do you type in only 5 seconds?</h1>
+        <h1 className='main-container-title'>Speed Typing Game</h1>
+        <h2>How fast do you type in only 5 seconds?</h2>
         <textarea 
           onChange={handleTextarea} 
           value={text}
@@ -61,7 +62,7 @@ function App() {
           ref = {refTextarea}
         />
         <h3>Time remaining: {timeRemaining}</h3>
-        <button 
+        <button className="sheen"
           onClick={startGame}
           disabled = {isRunning}
         >
@@ -69,7 +70,7 @@ function App() {
         </button>
         <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
       </div>
-    </>
+    </div>
   )
 };
 
