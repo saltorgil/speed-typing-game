@@ -1,12 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import "./app.css"
 
 function App() {
 
+  const START_GAME_TIME = 5
   const [text, setText] = useState('')
-  const [timeRemaining, setTimeRemaining] = useState(3)
+  const [timeRemaining, setTimeRemaining] = useState(START_GAME_TIME)
   const [isRunning, setIsRunning] = useState(false)
   const [numWords, setNumWords] = useState(0)
+
+  const refTextarea = useRef(null);
 
   const handleTextarea = (event) =>{
     setText(event.target.value)
@@ -21,8 +24,15 @@ function App() {
 
   const startGame = () => {
     setIsRunning(true)
-    setTimeRemaining(3)
+    setTimeRemaining(START_GAME_TIME)
     setText('')
+    refTextarea.current.disabled = false
+    refTextarea.current.focus()
+  }
+
+  const endGame = () =>{
+    setIsRunning(false);
+    setNumWords(countTextWords(text));
   }
 
   useEffect(()=>{
@@ -33,24 +43,30 @@ function App() {
       },1000)
     }
     else if (timeRemaining === 0) {
-      setIsRunning(false);
-      setNumWords(countTextWords(text));
+      endGame();
       console.log("juego terminado")
     }
-
+  // eslint-disable-next-line
   },[timeRemaining, isRunning])
 
 
   return(
     <>
       <div className='main-container'>
-        <h1>How fast do you type?</h1>
+        <h1>How fast do you type in only 5 seconds?</h1>
         <textarea 
           onChange={handleTextarea} 
           value={text}
+          disabled = {!isRunning}
+          ref = {refTextarea}
         />
         <h3>Time remaining: {timeRemaining}</h3>
-        <button onClick={startGame}>Start</button>
+        <button 
+          onClick={startGame}
+          disabled = {isRunning}
+        >
+            Start
+        </button>
         <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
       </div>
     </>

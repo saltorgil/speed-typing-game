@@ -22,6 +22,10 @@ html, body{
     font-size: 1.25rem;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 textarea{
     width: 95%;
     height: 250px;
@@ -32,10 +36,18 @@ textarea{
     border: 1px solid black
 }
 
+textarea:disabled{
+    background-color: grey;
+}
+
 button{
     padding: 12px;
     font-size: 1.5rem;
     background-color: var(--green_game);
     border: 1px solid black;
     text-transform: uppercase;
+}
+
+button:disabled{
+    cursor: not-allowed;
 }
