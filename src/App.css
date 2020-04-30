@@ -44,6 +44,12 @@ body > #root > div {
     align-items: center;
 }
 
+.main-container-title{
+    margin-top: -40px;
+    background: black;
+    width: 40rem;
+}
+
 h1{
     font-size: 3rem;
 }
