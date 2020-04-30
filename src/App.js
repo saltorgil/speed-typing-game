@@ -1,6 +1,6 @@
 import React from "react";
 import useTypingGame from "./hooks/useTypingGame"
-import "./css/app.css"
+import "./css/app.css" 
 
 function App() {
 
