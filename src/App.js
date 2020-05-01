@@ -4,7 +4,7 @@ import "./css/app.css"
 
 function App() {
 
-  const {text, timeRemaining, isRunning, numWords, refTextarea, handleTextarea, countTextWords, startGame} = useTypingGame(5)
+  const {text, timeRemaining, isRunning, randomQuote, numWords, refTextarea, handleTextarea, countTextWords, startGame} = useTypingGame(5)
 
 
   return(
@@ -12,6 +12,7 @@ function App() {
       <div className='main-container'>
         <h1 className='main-container-title'>Speed Typing Game</h1>
         <h2>How fast do you type in only 5 seconds?</h2>
+        <h4>TRY THIS 	<span style={{verticalAlign:'middle'}}>&#9654; </span>{randomQuote}</h4>
         <textarea 
           onChange={handleTextarea} 
           value={text}
