@@ -1,6 +1,9 @@
 import React from "react";
 import useTypingGame from "./hooks/useTypingGame"
 import "./css/app.css" 
+import logo from "./images/logox1.png"
+import { ReactComponent as Logo } from './images/logo.svg';
+
 
 function App() {
 
@@ -10,7 +13,12 @@ function App() {
   return(
     <div className="main">
       <div className='main-container'>
-        <h1 className='main-container-title'>Speed Typing Game</h1>
+{/*         <div className="main-container-logo"><img src={logo} alt="logo"></img></div>
+ */}
+ <div className="main-container-logo"> <Logo/></div>
+       
+        <hr/>
+
         <h2>How fast do you type in only 5 seconds?</h2>
         <h4>TRY THIS 	<span style={{verticalAlign:'middle'}}>&#9654; </span>{randomQuote}</h4>
         <textarea 

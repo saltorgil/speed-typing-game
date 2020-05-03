@@ -2,13 +2,14 @@
 @import url(./effects.css);
 
 :root {
-    --green_game: #00b800;
+    --green_game: #00FF00;
+    --grey_game: #585958;
   }
 
 
 *{
     box-sizing: border-box;
-    font-family: 'invasion';
+    font-family: 'retrogaming';
 }
 
 html, body{
@@ -22,7 +23,7 @@ html, body{
 }
 
 body > #root > div {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -35,8 +36,6 @@ body > #root > div {
 
 .main-container{
     font-size: 1.25rem;
-    border: 1px solid var(--green_game);
-    border-width: 4px;
     width: 90%;
     padding: 10px;
     display: flex;
@@ -46,28 +45,50 @@ body > #root > div {
 }
 
 .main-container-title{
-    margin-top: -3rem;
     background: black;
-    width: 82%;
     font-size: 3rem;
+}
+
+.main-container-logo{
+    width: 50%;
+    height: auto;
+}
+
+.main-container-logo img{
+    width: 100%;
+    height: auto;
 }
 
 h1{
     font-size: 3rem;
 }
 
+hr{
+    border: none;
+    height: 4px;  
+    width: 100vw;
+    margin: 0;
+    margin-top: 25px;
+    background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+}
+
 textarea{
-    width: 95%;
+    width: 100%;
     height: 200px;
     background-color: var(--green_game);
     outline: none;
     font-size: 1.25rem;
     padding: 10px;
-    border: 1px solid black
+    border: 1px solid black;
+    background-color: var(--green_game);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
 }
 
 textarea:disabled{
-    background-color: grey;
+    background-color: var(--grey_game);
+    background-color: black;
 }
 
 button{
@@ -77,6 +98,7 @@ button{
     border: 1px solid black;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'invasion';
 }
 
 button:disabled:after{
