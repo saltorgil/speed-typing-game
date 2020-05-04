@@ -2,6 +2,7 @@ import React from "react";
 import useTypingGame from "./hooks/useTypingGame"
 import "./css/app.css" 
 import logo from "./images/logox2.png"
+import audio from "./intergalactic.ogg"
 
 
 function App() {
@@ -10,7 +11,11 @@ function App() {
 
 
   return(
+
     <div className="main">
+      <audio autoPlay loop muted hidden>
+        <source src={audio} type="audio/ogg"/>
+      </audio>
       <div className='main-container'>
         <div className="main-container-logo"><img src={logo} alt="logo"></img></div>    
         <hr/>

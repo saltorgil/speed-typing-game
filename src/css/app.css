@@ -67,9 +67,9 @@ h1{
 
 hr{
     border: none;
+    margin: 0;
     height: 2px;  
     width: 100vw;
-    max-width: 800px;
     margin: 0;
     margin-top: 25px;
     background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
