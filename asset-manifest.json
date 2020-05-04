@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/speed-typing-game/static/css/main.9ab46ed3.chunk.css",
-    "main.js": "/speed-typing-game/static/js/main.28bfeeb7.chunk.js",
-    "main.js.map": "/speed-typing-game/static/js/main.28bfeeb7.chunk.js.map",
+    "main.css": "/speed-typing-game/static/css/main.0fc4e010.chunk.css",
+    "main.js": "/speed-typing-game/static/js/main.fc93d7a4.chunk.js",
+    "main.js.map": "/speed-typing-game/static/js/main.fc93d7a4.chunk.js.map",
     "runtime-main.js": "/speed-typing-game/static/js/runtime-main.92673d00.js",
     "runtime-main.js.map": "/speed-typing-game/static/js/runtime-main.92673d00.js.map",
-    "static/js/2.5597160d.chunk.js": "/speed-typing-game/static/js/2.5597160d.chunk.js",
-    "static/js/2.5597160d.chunk.js.map": "/speed-typing-game/static/js/2.5597160d.chunk.js.map",
+    "static/js/2.6e3e4b3e.chunk.js": "/speed-typing-game/static/js/2.6e3e4b3e.chunk.js",
+    "static/js/2.6e3e4b3e.chunk.js.map": "/speed-typing-game/static/js/2.6e3e4b3e.chunk.js.map",
     "index.html": "/speed-typing-game/index.html",
-    "precache-manifest.98da21c5ec6137d11ee7901f28bb8b8f.js": "/speed-typing-game/precache-manifest.98da21c5ec6137d11ee7901f28bb8b8f.js",
+    "precache-manifest.b4871e29774c5d5937c05dcf12bf0527.js": "/speed-typing-game/precache-manifest.b4871e29774c5d5937c05dcf12bf0527.js",
     "service-worker.js": "/speed-typing-game/service-worker.js",
-    "static/css/main.9ab46ed3.chunk.css.map": "/speed-typing-game/static/css/main.9ab46ed3.chunk.css.map",
-    "static/js/2.5597160d.chunk.js.LICENSE.txt": "/speed-typing-game/static/js/2.5597160d.chunk.js.LICENSE.txt",
-    "static/media/app.css": "/speed-typing-game/static/media/RetroGaming2.4c19fc87.ttf",
-    "static/media/logo.b150848f.svg": "/speed-typing-game/static/media/logo.b150848f.svg"
+    "static/css/main.0fc4e010.chunk.css.map": "/speed-typing-game/static/css/main.0fc4e010.chunk.css.map",
+    "static/js/2.6e3e4b3e.chunk.js.LICENSE.txt": "/speed-typing-game/static/js/2.6e3e4b3e.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/speed-typing-game/static/media/RetroGaming2.4c19fc87.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.92673d00.js",
-    "static/js/2.5597160d.chunk.js",
-    "static/css/main.9ab46ed3.chunk.css",
-    "static/js/main.28bfeeb7.chunk.js"
+    "static/js/2.6e3e4b3e.chunk.js",
+    "static/css/main.0fc4e010.chunk.css",
+    "static/js/main.fc93d7a4.chunk.js"
   ]
 }
