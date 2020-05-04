@@ -1,1 +1,15 @@
 # speed-typing-game
+
+This is my custom React project based on Bootcamp Speed Typing Game on Scrimba. Enjoy it :)
+
+# Screenshot Mobile
+
+![Alt Text](https://raw.github.com/saltorgil/speed-typing-game/master/public/screenshot-mobile.png)
+
+# Screenshot Desktop
+
+<img src="https://raw.github.com/saltorgil/speed-typing-game/master/public/screenshot-monitor.png" width="512px"/>
+
+# Demo
+
+https://saltorgil.github.io/speed-typing-game/
