@@ -36,7 +36,8 @@ body > #root > div {
 
 .main-container{
     font-size: 1.25rem;
-    width: 90%;
+    max-width: 800px;
+    width: 70%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -50,8 +51,8 @@ body > #root > div {
 }
 
 .main-container-logo{
-    width: 50%;
-    height: auto;
+    width:35%;
+    image-rendering: pixelated;
 }
 
 .main-container-logo img{
@@ -60,13 +61,14 @@ body > #root > div {
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 hr{
     border: none;
-    height: 4px;  
+    height: 2px;  
     width: 100vw;
+    max-width: 800px;
     margin: 0;
     margin-top: 25px;
     background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
@@ -74,14 +76,12 @@ hr{
 
 textarea{
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: var(--green_game);
     outline: none;
     font-size: 1.25rem;
     padding: 10px;
-    border: 1px solid black;
-    background-color: var(--green_game);
-    border: 2px solid transparent;
+    border: 2px solid;
     border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
 }
@@ -110,5 +110,9 @@ button:disabled:after{
 {
     html, body{
         font-size: 70%;
+    }
+
+    .main-container-logo{
+        width:80%;
     }
 }
