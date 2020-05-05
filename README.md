@@ -1,6 +1,7 @@
 # speed-typing-game
 
 This is my custom React project based on Bootcamp Speed Typing Game on Scrimba. Enjoy it :)
+I applied last technologies (Hooks, Flexbox, Media query, ...)
 
 # Screenshot Mobile
 
@@ -13,3 +14,10 @@ This is my custom React project based on Bootcamp Speed Typing Game on Scrimba. 
 # Demo
 
 https://saltorgil.github.io/speed-typing-game/
+
+# To-Do List
+
+- Add music
+- Add differents rounds
+- Add a leadership table
+
