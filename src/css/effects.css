@@ -1,32 +1,25 @@
 .sheen {
-    position: relative;
-    overflow: hidden;
-  }
-
-
-  
-.sheen:after {
-    animation: shine 0.7s ease-in-out infinite;
-    animation-fill-mode: backwards;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50px;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255,255,255,0.3);
-    transform: skewX(-30deg);
+  position: relative;
+  overflow: hidden;
 }
 
-
+.sheen:after {
+  animation: shine 0.7s ease-in-out infinite;
+  animation-fill-mode: backwards;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: skewX(-30deg);
+}
 
 @keyframes shine {
-    100% {
-      transform: skewX(-30deg) translate(200px);
-    }
+  100% {
+    transform: skewX(-30deg) translate(200px);
+  }
 }
-
-
-
