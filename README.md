@@ -17,7 +17,7 @@ https://saltorgil.github.io/speed-typing-game/
 
 # To-Do List
 
-- Add music
+- Add music &#10003;	
 - Add differents rounds
 - Add a leadership table
 
