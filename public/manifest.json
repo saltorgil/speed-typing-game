@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Speed Typing Game",
+  "name": "Speed Typing Game",
   "icons": [
     {
       "src": "favicon.svg",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logox1.png",
+      "src": "logo.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logox2.png",
+      "src": "logo.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

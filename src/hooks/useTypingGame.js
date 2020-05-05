@@ -10,8 +10,15 @@ function useTypingGame(start_game_time){
     const [allQuotes, setAllQuotes] = useState([])
     const [randomQuote, setRandomQuote] = useState('')
 
+    const [volumeOn, setVolumeOn] = useState(true)
+
 
     const refTextarea = useRef(null);
+    const refAudio = useRef(null)
+
+    const handleVolumeOn = () => {
+      setVolumeOn(prevVolumeOn => !prevVolumeOn)
+    }
 
     const handleTextarea = (event) =>{
       setText(event.target.value)
@@ -75,13 +82,22 @@ function useTypingGame(start_game_time){
       }
       
       randomQuote()
+
     },[])
 
     // eslint-disable-next-line
     useEffect(()=>getRandomQuote(), [allQuotes])
 
+    useEffect(()=>{
+      volumeOn ? refAudio.current.play() : refAudio.current.pause();
+    }, [volumeOn])
 
-    return {text, timeRemaining, isRunning, randomQuote, numWords, refTextarea, handleTextarea, countTextWords, startGame}
+
+
+
+    return {text, timeRemaining, isRunning, randomQuote, numWords, 
+      refTextarea, refAudio, handleTextarea, countTextWords, startGame,
+      volumeOn, handleVolumeOn}
 }
 
 export default useTypingGame

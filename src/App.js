@@ -2,18 +2,22 @@ import React from "react";
 import useTypingGame from "./hooks/useTypingGame"
 import "./css/app.css" 
 import logo from "./images/logox2.png"
+
 import audio from "./intergalactic.ogg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVolumeUp, faVolumeMute } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
 
-  const {text, timeRemaining, isRunning, randomQuote, numWords, refTextarea, handleTextarea, countTextWords, startGame} = useTypingGame(5)
+  const {text, timeRemaining, isRunning, randomQuote, numWords, refTextarea, refAudio,
+    handleTextarea, countTextWords, startGame, volumeOn, handleVolumeOn} = useTypingGame(5)
 
 
   return(
 
     <div className="main">
-      <audio autoPlay loop muted hidden>
+      <audio ref={refAudio} autoPlay loop hidden>
         <source src={audio} type="audio/ogg"/>
       </audio>
       <div className='main-container'>
@@ -36,6 +40,12 @@ function App() {
             Start
         </button>
         <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
+        <FontAwesomeIcon 
+          onClick={handleVolumeOn}
+          className="volume-icon" 
+          icon={volumeOn ? faVolumeUp: faVolumeMute} 
+          size= 'lg'
+        />
       </div>
     </div>
   )
