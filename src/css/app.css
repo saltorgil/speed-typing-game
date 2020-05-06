@@ -39,7 +39,8 @@ h3 {
 
 /* General Styles */
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -50,7 +51,8 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: none;
   height: 100vh;
-  height: -webkit-fill-available;
+  max-height: webkit-fill-available;
+  max-height: stretch;
 }
 
 #root {
@@ -64,7 +66,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  height: -webkit-fill-available;
 }
 
 .main-container {
@@ -159,7 +160,7 @@ body {
   -webkit-font-smoothing: auto;
 }
 
-.main-container-body-textarea:disabled:after {
+.main-container-body-button:disabled:after {
   cursor: not-allowed;
   animation-play-state: paused;
 }
