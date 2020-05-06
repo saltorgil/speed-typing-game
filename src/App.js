@@ -29,33 +29,45 @@ function App() {
         <source src={audio} type='audio/ogg' />
       </audio>
       <div className='main-container'>
-        <div className='main-container-logo'>
-          <img src={logo} alt='logo'></img>
+        {/* Main container header */}
+        <div className='main-container-header'>
+          <div className='main-container-header-logo'>
+            <img src={logo} alt='logo'></img>
+          </div>
+          <FontAwesomeIcon
+            onClick={handleVolumeOn}
+            className='main-container-header-volume'
+            icon={volumeOn ? faVolumeUp : faVolumeMute}
+            size='lg'
+          />
         </div>
-        <hr />
 
-        <h2>How fast do you type in only 5 seconds?</h2>
-        <h4>
-          TRY THIS <span>&#9654; </span>
-          {randomQuote}
-        </h4>
-        <textarea
-          onChange={handleTextarea}
-          value={text}
-          disabled={!isRunning}
-          ref={refTextarea}
-        />
-        <h3>Time remaining: {timeRemaining}</h3>
-        <button className='sheen' onClick={startGame} disabled={isRunning}>
-          Start
-        </button>
-        <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
-        <FontAwesomeIcon
-          onClick={handleVolumeOn}
-          className='volume-icon'
-          icon={volumeOn ? faVolumeUp : faVolumeMute}
-          size='lg'
-        />
+        {/* Main container separation */}
+        <hr className='main-container-hr' />
+
+        {/* Main container body */}
+        <div className='main-container-body'>
+          <h1>How fast do you type in only 5 seconds?</h1>
+          <h3>
+            TRY THIS <span>&#9654; </span>
+            {randomQuote}
+          </h3>
+          <textarea
+            className='main-container-body-textarea'
+            onChange={handleTextarea}
+            value={text}
+            disabled={!isRunning}
+            ref={refTextarea}
+          />
+          <h3>Time remaining: {timeRemaining}</h3>
+          <button
+            className='main-container-body-button sheen'
+            onClick={startGame}
+            disabled={isRunning}>
+            Start
+          </button>
+          <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
+        </div>
       </div>
     </div>
   );

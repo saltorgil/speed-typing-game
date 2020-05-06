@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'invasion';
-    src: url('../fonts/INVASION2000.TTF');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'invasion';
+  src: url('../fonts/INVASION2000.TTF');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'retrogaming';
-    src: url('../fonts/RetroGaming2.ttf');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'retrogaming';
+  src: url('../fonts/RetroGaming2.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
