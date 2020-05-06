@@ -47,9 +47,14 @@ body {
   color: var(--clr-primary);
   font-family: 'retrogaming';
   font-size: var(--fs-body);
-  height: 100%;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: none;
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+#root {
+  height: 100%;
 }
 
 /* Main containers */
@@ -58,7 +63,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  height: -webkit-fill-available;
 }
 
 .main-container {
