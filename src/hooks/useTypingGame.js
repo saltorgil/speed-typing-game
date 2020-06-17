@@ -1,5 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 
+export const countTextWords = (text) =>
+  text
+    .trim()
+    .split(' ')
+    .filter((word) => word !== '').length;
+
 function useTypingGame(start_game_time) {
   const [text, setText] = useState('');
   const [timeRemaining, setTimeRemaining] = useState(start_game_time);
@@ -21,12 +27,6 @@ function useTypingGame(start_game_time) {
   const handleTextarea = (event) => {
     setText(event.target.value);
   };
-
-  const countTextWords = (text) =>
-    text
-      .trim()
-      .split(' ')
-      .filter((word) => word !== '').length;
 
   const startGame = () => {
     setIsRunning(true);

@@ -66,7 +66,9 @@ function App() {
             disabled={isRunning}>
             Start
           </button>
-          <h1 onClick={countTextWords}>Word Count: {numWords}</h1>
+          <h1 id='main-container-click' onClick={countTextWords}>
+            Word Count: {numWords}
+          </h1>
         </div>
       </div>
     </div>
