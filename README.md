@@ -18,6 +18,8 @@ https://saltorgil.github.io/speed-typing-game/
 # To-Do List
 
 - Add music &#10003;	
+- Add tests &#10003;	
+- Add typescript
 - Add differents rounds
 - Add a leadership table
 
